@@ -10,7 +10,7 @@ const connect = async () => {
   if (database) return;
 
   mongoose
-    .connect("mongodb+srv://janindu01:jani1234@library-database-cluste.kixqdpa.mongodb.net/library-db?retryWrites=true&w=majority")
+    .connect("mongo url")
     .then((connection) => {
       database = connection;
       logger.info("Database Synced");
